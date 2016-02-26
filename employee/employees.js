@@ -13,8 +13,8 @@ function Employees(){
     return emp;
   };
 
-  this.update = function(emp){
-    var found = this.find(emp.id);
+  this.update = function(id, emp){
+    var found = this.find(id);
     found.name = emp.name;
     found.age = emp.age;
     found.job = emp.job;
