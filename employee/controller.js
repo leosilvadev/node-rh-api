@@ -7,6 +7,7 @@ function getEmployee(body){
     name: body.name,
     age: body.age,
     salary: body.salary,
+    job: body.job,
     image: body.image
   };
   return employee;

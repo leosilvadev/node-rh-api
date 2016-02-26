@@ -16,6 +16,7 @@ function Employees(){
   this.update = function(id, emp){
     var found = this.find(id);
     found.name = emp.name;
+    found.salary = emp.salary;
     found.age = emp.age;
     found.job = emp.job;
     return found;
