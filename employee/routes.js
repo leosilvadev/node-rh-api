@@ -9,6 +9,15 @@ var controller = require('./controller');
 * @apiGroup Employees
 * @apiVersion 1.0.0
 
+* @apiHeader {String} Content-Type application/json
+* @apiHeader {String} Accept application/json
+
+* @apiHeaderExample {json} Header-Example:
+* {
+*   "Content-Type": "application/json",
+*   "Accept": "application/json"
+* }
+
 * @apiParam {String} name Employee name
 * @apiParam {Number} age Employee age
 * @apiParam {String} job Employee job name
@@ -49,7 +58,14 @@ router.post('/', controller.register);
 * @apiName List
 * @apiGroup Employees
 * @apiVersion 1.0.0
-*
+
+* @apiHeader {String} Accept application/json
+
+* @apiHeaderExample {json} Header-Example:
+* {
+*   "Accept": "application/json"
+* }
+
 * @apiSampleRequest https://fatea-rh.herokuapp.com/v1/employees
 *
 * @apiSuccess (Ok 200) {String} name Employee name
@@ -75,7 +91,14 @@ router.get('/', controller.list);
 * @apiName Get
 * @apiGroup Employees
 * @apiVersion 1.0.0
-*
+
+* @apiHeader {String} Accept application/json
+
+* @apiHeaderExample {json} Header-Example:
+* {
+*   "Accept": "application/json"
+* }
+
 * @apiSampleRequest https://fatea-rh.herokuapp.com/v1/employees/1
 *
 * @apiSuccess (Ok 200) {String} name Employee name
@@ -101,6 +124,15 @@ router.get('/:employeeId', controller.find);
 * @apiName Update
 * @apiGroup Employees
 * @apiVersion 1.0.0
+
+* @apiHeader {String} Content-Type application/json
+* @apiHeader {String} Accept application/json
+
+* @apiHeaderExample {json} Header-Example:
+* {
+*   "Content-Type": "application/json",
+*   "Accept": "application/json"
+* }
 
 * @apiParam {String} name Employee name
 * @apiParam {Number} age Employee age
@@ -144,7 +176,14 @@ router.put('/:employeeId', controller.update);
 * @apiName Fire
 * @apiGroup Employees
 * @apiVersion 1.0.0
-*
+
+* @apiHeader {String} Accept application/json
+
+* @apiHeaderExample {json} Header-Example:
+* {
+*   "Accept": "application/json"
+* }
+
 * @apiSampleRequest https://fatea-rh.herokuapp.com/v1/employees/1
 *
 * @apiSuccess (Ok 200) {String} name Employee name

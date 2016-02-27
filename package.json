@@ -12,6 +12,7 @@
     "apidoc": "^0.15.1",
     "body-parser": "^1.15.0",
     "cors": "^2.7.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+	 "apidoc": "git+https://github.com/leosilvadev/apidoc.git"
   }
 }

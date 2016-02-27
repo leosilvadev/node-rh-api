@@ -6,6 +6,26 @@ define({ "api": [
     "name": "Fire",
     "group": "Employees",
     "version": "1.0.0",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept",
+            "description": "<p>application/json</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Accept\": \"application/json\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "sampleRequest": [
       {
         "url": "https://fatea-rh.herokuapp.com/v1/employees/1"
@@ -69,6 +89,26 @@ define({ "api": [
     "name": "Get",
     "group": "Employees",
     "version": "1.0.0",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept",
+            "description": "<p>application/json</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Accept\": \"application/json\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "sampleRequest": [
       {
         "url": "https://fatea-rh.herokuapp.com/v1/employees/1"
@@ -132,6 +172,26 @@ define({ "api": [
     "name": "List",
     "group": "Employees",
     "version": "1.0.0",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept",
+            "description": "<p>application/json</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Accept\": \"application/json\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "sampleRequest": [
       {
         "url": "https://fatea-rh.herokuapp.com/v1/employees"
@@ -195,6 +255,33 @@ define({ "api": [
     "name": "Registration",
     "group": "Employees",
     "version": "1.0.0",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/json</p>"
+          },
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept",
+            "description": "<p>application/json</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Content-Type\": \"application/json\",\n  \"Accept\": \"application/json\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -306,6 +393,33 @@ define({ "api": [
     "name": "Update",
     "group": "Employees",
     "version": "1.0.0",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/json</p>"
+          },
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Accept",
+            "description": "<p>application/json</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Content-Type\": \"application/json\",\n  \"Accept\": \"application/json\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "parameter": {
       "fields": {
         "Parameter": [
