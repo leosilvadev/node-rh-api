@@ -19,7 +19,7 @@ function Employees(){
     found.salary = emp.salary;
     found.age = emp.age;
     found.job = emp.job;
-    found.url = emp.url;
+    found.image = emp.image;
     return found;
   };
 
