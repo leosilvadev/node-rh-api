@@ -234,21 +234,21 @@ define({ "api": [
             "description": "<p>Url of employee pic</p>"
           }
         ]
-      }
-    },
-    "success": {
+      },
       "examples": [
         {
-          "title": "Request (example):",
+          "title": "Request-Example:",
           "content": "{\n  \"name\":\"Employee name\",\n  \"age\": 30,\n  \"job\":\"Employee job\",\n  \"salary\":2030.20,\n  \"image\":\"http://...*.png\"\n}",
           "type": "json"
-        },
-        {
-          "title": "Created-Response:",
-          "content": "HTTP/1.1 201 Created\n[{\n  \"name\": \"Any name\",\n  \"age\": 27,\n  \"job\": \"Any job\",\n  \"salary\": 10312.20,\n  \"image\": \"Any url\"\n}]",
-          "type": "json"
         }
-      ],
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "https://fatea-rh.herokuapp.com/v1/employees"
+      }
+    ],
+    "success": {
       "fields": {
         "Created 201": [
           {
@@ -287,13 +287,15 @@ define({ "api": [
             "description": "<p>Url of employee pic</p>"
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Created-Response:",
+          "content": "HTTP/1.1 201 Created\n[{\n  \"name\": \"Any name\",\n  \"age\": 27,\n  \"job\": \"Any job\",\n  \"salary\": 10312.20,\n  \"image\": \"Any url\"\n}]",
+          "type": "json"
+        }
+      ]
     },
-    "sampleRequest": [
-      {
-        "url": "https://fatea-rh.herokuapp.com/v1/employees"
-      }
-    ],
     "filename": "employee/routes.js",
     "groupTitle": "Employees"
   },
@@ -343,21 +345,21 @@ define({ "api": [
             "description": "<p>Url of employee pic</p>"
           }
         ]
-      }
-    },
-    "success": {
+      },
       "examples": [
         {
-          "title": "Request (example):",
+          "title": "Request-Example:",
           "content": "{\n  \"name\":\"Employee name\",\n  \"age\": 30,\n  \"job\":\"Employee job\",\n  \"salary\":2030.20,\n  \"image\":\"http://...*.png\"\n}",
           "type": "json"
-        },
-        {
-          "title": "Ok-Response:",
-          "content": "HTTP/1.1 200 Ok\n[{\n  \"name\": \"Any name\",\n  \"age\": 27,\n  \"job\": \"Any job\",\n  \"salary\": 10312.20,\n  \"image\": \"Any url\"\n}]",
-          "type": "json"
         }
-      ],
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "https://fatea-rh.herokuapp.com/v1/employees/1"
+      }
+    ],
+    "success": {
       "fields": {
         "Created 201": [
           {
@@ -396,13 +398,15 @@ define({ "api": [
             "description": "<p>Url of employee pic</p>"
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "Ok-Response:",
+          "content": "HTTP/1.1 200 Ok\n[{\n  \"name\": \"Any name\",\n  \"age\": 27,\n  \"job\": \"Any job\",\n  \"salary\": 10312.20,\n  \"image\": \"Any url\"\n}]",
+          "type": "json"
+        }
+      ]
     },
-    "sampleRequest": [
-      {
-        "url": "https://fatea-rh.herokuapp.com/v1/employees/1"
-      }
-    ],
     "filename": "employee/routes.js",
     "groupTitle": "Employees"
   }

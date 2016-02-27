@@ -15,7 +15,7 @@ var controller = require('./controller');
 * @apiParam {Number} salary Employee salary
 * @apiParam {String} image Url of employee pic
 
-* @apiSuccessExample {json} Request (example):
+* @apiParamExample {json} Request-Example:
 * {
 *   "name":"Employee name",
 *   "age": 30,
@@ -24,7 +24,6 @@ var controller = require('./controller');
 *   "image":"http://...*.png"
 * }
 
-*
 * @apiSampleRequest https://fatea-rh.herokuapp.com/v1/employees
 *
 * @apiSuccess (Created 201) {String} name Employee name
@@ -109,7 +108,7 @@ router.get('/:employeeId', controller.find);
 * @apiParam {Number} salary Employee salary
 * @apiParam {String} image Url of employee pic
 
-* @apiSuccessExample {json} Request (example):
+* @apiParamExample {json} Request-Example:
 * {
 *   "name":"Employee name",
 *   "age": 30,
