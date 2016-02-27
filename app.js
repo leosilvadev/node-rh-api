@@ -7,8 +7,9 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static(__dirname + '/docs'));
 
-app.use('/employees', require('./employee/routes'));
+app.use('/v1/employees', require('./employee/routes'));
 
 app.disable('x-powered-by');
 
